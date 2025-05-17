@@ -1,5 +1,9 @@
 
 
+
+
+
+
 import React from "react";
 import bookIcon from "../../assets/Group.png";
 import atomIcon from "../../assets/Group1.png";
@@ -14,10 +18,12 @@ const AboutSection = () => {
   return (
     <section className="relative bg-white w-full text-gray-800 px-6 py-16 overflow-hidden">
 
+      
       <div className="text-center mb-10">
         <h2 className="text-3xl font-extrabold text-orange-500">About Us!</h2>
       </div>
 
+     
       <div className="relative flex justify-center items-start max-w-5xl mx-auto">
         <div className="relative w-24 hidden md:flex flex-col items-center mr-4">
           <img src={bookIcon} alt="Book" className="w-10 mb-4 translate-x-2" />
@@ -48,7 +54,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-
+      
       <div className="mt-24 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10">
         <div className="flex-1">
           <h3 className="text-2xl font-bold text-orange-500 mb-4">Our Mission</h3>
@@ -68,23 +74,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-
-      <div className="absolute left-0 right-0 mx-auto top-[65%] md:top-[60%] h-[200px] z-0 pointer-events-none">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 1440 200"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1100,0 C900,100 500,100 300,200"
-            fill="transparent"
-            stroke="#1D4ED8"
-            strokeWidth="4"
-          />
-        </svg>
-      </div>
-
+    
       <div className="mt-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10 relative z-10">
         <div className="flex-1">
           <h3 className="text-2xl font-bold text-orange-500 mb-4">Our Vision</h3>
@@ -102,6 +92,35 @@ const AboutSection = () => {
             id="vision-img"
           />
         </div>
+      </div>
+
+      
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 1440 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#0071BC" />
+              <stop offset="100%" stopColor="#004C97" />
+            </linearGradient>
+          </defs>
+          <path
+            d="
+              M 1000 250
+              C 950 350, 700 550, 450 600
+            "
+            stroke="url(#lineGradient)"
+            strokeWidth="10"
+            fill="transparent"
+            strokeLinecap="round"
+          />
+        </svg>
       </div>
     </section>
   );
