@@ -1,9 +1,5 @@
 
 
-
-
-
-
 import React from "react";
 import bookIcon from "../../assets/Group.png";
 import atomIcon from "../../assets/Group1.png";
@@ -17,13 +13,10 @@ import visionImage from "../../assets/Union-3.png";
 const AboutSection = () => {
   return (
     <section className="relative bg-white w-full text-gray-800 px-6 py-16 overflow-hidden">
-
-      
       <div className="text-center mb-10">
         <h2 className="text-3xl font-extrabold text-orange-500">About Us!</h2>
       </div>
 
-     
       <div className="relative flex justify-center items-start max-w-5xl mx-auto">
         <div className="relative w-24 hidden md:flex flex-col items-center mr-4">
           <img src={bookIcon} alt="Book" className="w-10 mb-4 translate-x-2" />
@@ -54,7 +47,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      
+   
       <div className="mt-24 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10">
         <div className="flex-1">
           <h3 className="text-2xl font-bold text-orange-500 mb-4">Our Mission</h3>
@@ -94,7 +87,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      
+   
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <svg
           width="100%"
@@ -112,11 +105,13 @@ const AboutSection = () => {
           </defs>
           <path
             d="
-              M 1000 250
-              C 950 350, 700 550, 450 600
+              M 50 600
+              C 300 500, 450 550, 600 450
+              S 850 300, 1000 350
+              S 1200 420, 1400 370
             "
             stroke="url(#lineGradient)"
-            strokeWidth="10"
+            strokeWidth="15"
             fill="transparent"
             strokeLinecap="round"
           />
@@ -127,3 +122,31 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
