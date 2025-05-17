@@ -1,12 +1,11 @@
 
-
-
 import React from "react";
+import { motion } from "framer-motion";
+
 
 import bookIcon from "../../assets/Group.png";
 import atomIcon from "../../assets/Group1.png";
 import docIcon from "../../assets/Group3.png";
-import planetIcon from "../../assets/Group5.png";
 import bulbIcon from "../../assets/Group6.png";
 import flaskIcon from "../../assets/react.svg";
 import monitorIcon from "../../assets/Vector.png";
@@ -18,22 +17,49 @@ const Home = () => {
       className="w-full min-h-screen bg-white relative flex justify-center items-center px-4"
     >
     
-      <div className="absolute top-[30%] left-[10%] transform -rotate-12">
-        <img src={bookIcon} alt="Book" className="w-16 mb-6" />
-        <img src={atomIcon} alt="Atom" className="w-16 mb-6" />
-        <img src={docIcon} alt="Document" className="w-16 mb-6" />
-      </div>
+      <img
+        src={bookIcon}
+        alt="Book"
+        className="absolute left-[6vw] top-[25%] w-12 rotate-[10deg]"
+      />
+      <img
+        src={atomIcon}
+        alt="Atom"
+        className="absolute left-[5vw] top-[50%] w-12"
+      />
+      <img
+        src={docIcon}
+        alt="Document"
+        className="absolute left-[6vw] bottom-[25%] w-12 -rotate-[10deg]"
+      />
 
-      <div className="absolute top-[30%] right-[10%] transform rotate-12">
-        <img src={bulbIcon} alt="Bulb" className="w-16 mb-6" />
-        <img src={flaskIcon} alt="Flask" className="w-16 mb-6" />
-        <img src={monitorIcon} alt="Monitor" className="w-16 mb-6" />
-      </div>
+   
+      <img
+        src={bulbIcon}
+        alt="Bulb"
+        className="absolute right-[6vw] top-[25%] w-12 -rotate-[10deg]"
+      />
+      <img
+        src={flaskIcon}
+        alt="Flask"
+        className="absolute right-[5vw] top-[50%] w-12"
+      />
+      <img
+        src={monitorIcon}
+        alt="Monitor"
+        className="absolute right-[6vw] bottom-[25%] w-12 rotate-[10deg]"
+      />
 
-      <div className="max-w-4xl w-full text-center px-6 py-10 z-10">
-        <h1 className="text-4xl font-extrabold text-orange-500 mb-8 border-b-4 border-orange-400 inline-block">
+      <div className="max-w-3xl w-full text-center px-6 py-10 z-10">
+      
+        <motion.h1
+          className="text-4xl font-extrabold text-orange-500 mb-8 border-b-4 border-orange-400 inline-block"
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           About Us!
-        </h1>
+        </motion.h1>
+
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
           DL Masters Academy is an IT training institute committed to delivering top-notch education
           for both students and professionals. Emphasizing hands-on learning and industry alignment,
