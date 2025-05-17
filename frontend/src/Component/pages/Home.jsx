@@ -1,79 +1,110 @@
 
+
 import React from "react";
-import { motion } from "framer-motion";
-
-
 import bookIcon from "../../assets/Group.png";
 import atomIcon from "../../assets/Group1.png";
 import docIcon from "../../assets/Group3.png";
-import bulbIcon from "../../assets/Group6.png";
-import flaskIcon from "../../assets/react.svg";
-import monitorIcon from "../../assets/Vector.png";
+import bulbIcon from "../../assets/Group5.png";
+import flaskIcon from "../../assets/Group6.png";
+import monitorIcon from "../../assets/Vector 1.png";
+import missionImage from "../../assets/Union.png";
+import visionImage from "../../assets/Union-3.png";
 
-const Home = () => {
+const AboutSection = () => {
   return (
-    <section
-      id="about"
-      className="w-full min-h-screen bg-white relative flex justify-center items-center px-4"
-    >
-    
-      <img
-        src={bookIcon}
-        alt="Book"
-        className="absolute left-[6vw] top-[25%] w-12 rotate-[10deg]"
-      />
-      <img
-        src={atomIcon}
-        alt="Atom"
-        className="absolute left-[5vw] top-[50%] w-12"
-      />
-      <img
-        src={docIcon}
-        alt="Document"
-        className="absolute left-[6vw] bottom-[25%] w-12 -rotate-[10deg]"
-      />
+    <section className="relative bg-white w-full text-gray-800 px-6 py-16 overflow-hidden">
 
-   
-      <img
-        src={bulbIcon}
-        alt="Bulb"
-        className="absolute right-[6vw] top-[25%] w-12 -rotate-[10deg]"
-      />
-      <img
-        src={flaskIcon}
-        alt="Flask"
-        className="absolute right-[5vw] top-[50%] w-12"
-      />
-      <img
-        src={monitorIcon}
-        alt="Monitor"
-        className="absolute right-[6vw] bottom-[25%] w-12 rotate-[10deg]"
-      />
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-extrabold text-orange-500">About Us!</h2>
+      </div>
 
-      <div className="max-w-3xl w-full text-center px-6 py-10 z-10">
-      
-        <motion.h1
-          className="text-4xl font-extrabold text-orange-500 mb-8 border-b-4 border-orange-400 inline-block"
-          whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 300 }}
+      <div className="relative flex justify-center items-start max-w-5xl mx-auto">
+        <div className="relative w-24 hidden md:flex flex-col items-center mr-4">
+          <img src={bookIcon} alt="Book" className="w-10 mb-4 translate-x-2" />
+          <img src={atomIcon} alt="Atom" className="w-10 mb-4 translate-x-1" />
+          <img src={docIcon} alt="Doc" className="w-10" />
+        </div>
+
+        <div className="text-center md:text-left max-w-3xl z-10">
+          <p className="text-base leading-relaxed">
+            DL Masters Academy is an IT training institute committed to delivering top-notch
+            education for both students and professionals. Emphasizing hands-on learning and
+            industry alignment, we provide well-rounded training programs tailored to the
+            demands of today's technology-focused world.
+          </p>
+          <p className="mt-4 text-base leading-relaxed">
+            Our offerings include both online and offline courses, catering to college students
+            and working professionals alike. From immersive boot camps to internships with
+            project-based guidance, our programs are designed to equip you with sought-after
+            skills in areas such as UI/UX Design, Front-End Development, Full-Stack Development,
+            Amazon Web Services (AWS), and Digital Marketing.
+          </p>
+        </div>
+
+        <div className="relative w-24 hidden md:flex flex-col items-center ml-4">
+          <img src={bulbIcon} alt="Bulb" className="w-10 mb-4 -translate-x-2" />
+          <img src={flaskIcon} alt="Flask" className="w-10 mb-4 -translate-x-1" />
+          <img src={monitorIcon} alt="Monitor" className="w-10" />
+        </div>
+      </div>
+
+
+      <div className="mt-24 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10">
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold text-orange-500 mb-4">Our Mission</h3>
+          <p className="text-base leading-relaxed">
+            Our mission is to bridge the gap between academic learning and real-world applications.
+            We equip students with practical skills in the latest technologies, ensuring they are
+            job-ready and prepared for the modern IT industry.
+          </p>
+        </div>
+        <div className="flex-1 relative z-10">
+          <img
+            src={missionImage}
+            alt="Mission"
+            className="rounded-xl shadow-lg w-full max-w-md mx-auto"
+            id="mission-img"
+          />
+        </div>
+      </div>
+
+
+      <div className="absolute left-0 right-0 mx-auto top-[65%] md:top-[60%] h-[200px] z-0 pointer-events-none">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 1440 200"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          About Us!
-        </motion.h1>
+          <path
+            d="M1100,0 C900,100 500,100 300,200"
+            fill="transparent"
+            stroke="#1D4ED8"
+            strokeWidth="4"
+          />
+        </svg>
+      </div>
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          DL Masters Academy is an IT training institute committed to delivering top-notch education
-          for both students and professionals. Emphasizing hands-on learning and industry alignment,
-          we provide well-rounded training programs tailored to the demands of today’s technology-focused world.
-        </p>
-        <p className="text-gray-700 text-lg leading-relaxed">
-          Our offerings include both online and offline courses, catering to college students and working
-          professionals alike. From immersive boot camps to internships with project-based guidance,
-          our programs are designed to equip you with sought-after skills in areas such as UI/UX Design,
-          Front-End Development, Full-Stack Development, Amazon Web Services (AWS), and Digital Marketing.
-        </p>
+      <div className="mt-10 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10 relative z-10">
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold text-orange-500 mb-4">Our Vision</h3>
+          <p className="text-base leading-relaxed">
+            We envision a future where every student can reach their full potential in the tech industry.
+            Through exceptional training and steadfast support, we aim to cultivate a community of
+            skilled professionals prepared to innovate and lead.
+          </p>
+        </div>
+        <div className="flex-1 relative z-10">
+          <img
+            src={visionImage}
+            alt="Vision"
+            className="rounded-xl shadow-lg w-full max-w-md mx-auto"
+            id="vision-img"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-export default Home;
+export default AboutSection;
