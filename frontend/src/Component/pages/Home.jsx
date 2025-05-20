@@ -143,10 +143,3 @@ export default AboutSection;
 
 
 
-
-
-
-
-
-
-

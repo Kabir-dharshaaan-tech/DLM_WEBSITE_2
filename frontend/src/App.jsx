@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Banner from './Component/Banner/Banner';
 import Menubar from './Component/Menubar/Menubar';
 import Home from './Component/pages/Home'; 
+import Courses from './Component/pages/courses'
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Banner />
              
               <Home />
+              <Courses />
             </>
           }
         />
