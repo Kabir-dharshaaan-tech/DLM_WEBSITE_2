@@ -7,6 +7,7 @@ import Home from './Component/pages/Home';
 import Courses from './Component/pages/courses'
 import Slide from './Component/pages/slide'
 import List from './Component/pages/List'
+import Details from './Component/pages/Details'
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Courses />
               <Slide />
               <List />
+              <Details />
             </>
           }
         />
