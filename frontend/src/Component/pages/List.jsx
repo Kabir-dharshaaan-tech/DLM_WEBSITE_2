@@ -1,31 +1,34 @@
 
 
 import React from 'react';
-
+import onlinelearning from '../../assets/export-1.png'
+import internship from '../../assets/export-2.png'
+import bootcamps from '../../assets/export-3.png'
+import offline from '../../assets/export-4.png'
 const learningOptions = [
   {
     title: 'Online Learning',
     description:
       'Our online courses offer flexibility with live classes, recorded sessions, and self-paced modules. Access our platform from anywhere for interactive, virtual learning.',
-    image: '/images/online-learning.svg', 
+    image: onlinelearning, 
   },
   {
     title: 'Internships & Project Guidance',
     description:
       'Gain practical experience with our internships, featuring project guidance from industry experts. Apply your skills in real-world scenarios, build your portfolio, and boost your employability.',
-    image: '/images/internships.svg',
+    image: internship,
   },
   {
     title: 'Boot Camps',
     description:
       'Fast-track your skills with our intensive boot camps. These short-term programs cover core and advanced topics quickly, immersing you in your field.',
-    image: '/images/boot-camp.svg',
+    image: bootcamps,
   },
   {
     title: 'Offline Learning',
     description:
       'Prefer in-person instruction? Our offline courses offer state-of-the-art classrooms and direct access to instructors and peers.',
-    image: '/images/offline-learning.svg',
+    image: offline,
   },
 ];
 

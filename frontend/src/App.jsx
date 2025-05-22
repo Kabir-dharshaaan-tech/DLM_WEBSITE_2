@@ -8,6 +8,7 @@ import Courses from './Component/pages/courses'
 import Slide from './Component/pages/slide'
 import List from './Component/pages/List'
 import Details from './Component/pages/Details'
+import Middle from './Component/pages/middle'
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Banner />
              
               <Home />
+              <Middle />
               <Courses />
               <Slide />
               <List />
