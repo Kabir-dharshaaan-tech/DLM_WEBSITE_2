@@ -1,16 +1,17 @@
 
-
 import React from 'react';
-import onlinelearning from '../../assets/export-1.png'
-import internship from '../../assets/export-2.png'
-import bootcamps from '../../assets/export-3.png'
-import offline from '../../assets/export-4.png'
+import { motion } from 'framer-motion';
+import onlinelearning from '../../assets/export-1.png';
+import internship from '../../assets/export-2.png';
+import bootcamps from '../../assets/export-3.png';
+import offline from '../../assets/export-4.png';
+
 const learningOptions = [
   {
     title: 'Online Learning',
     description:
       'Our online courses offer flexibility with live classes, recorded sessions, and self-paced modules. Access our platform from anywhere for interactive, virtual learning.',
-    image: onlinelearning, 
+    image: onlinelearning,
   },
   {
     title: 'Internships & Project Guidance',
@@ -34,8 +35,8 @@ const learningOptions = [
 
 const List = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold text-center mb-14">
+    <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-4xl font-bold text-center mb-16">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 drop-shadow-md">
           Learning Options
         </span>
@@ -43,24 +44,30 @@ const List = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {learningOptions.map((option, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex items-start p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex items-start p-6 sm:p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl border border-gray-100 hover:border-orange-400 transition duration-300"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
           >
-            <img
+            <motion.img
               src={option.image}
               alt={option.title}
-              className="w-24 h-24 object-contain mr-6"
+              className="w-20 h-20 sm:w-24 sm:h-24 object-contain mr-5 sm:mr-6"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: 'spring', stiffness: 300 }}
             />
             <div>
-              <h3 className="text-2xl font-semibold text-orange-500 mb-3">
+              <h3 className="text-xl sm:text-2xl font-semibold text-orange-500 mb-2">
                 {option.title}
               </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                 {option.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -1,58 +1,59 @@
 
 
-
-
-
 import React from "react";
+import uiux from '../../assets/export-1.png'
+const CoursesSection = () => {
+  const courses = [
+    { title: "UI/UX Design", image: uiux },
+    { title: "Front-end Development", image: "/images/frontend.png" },
+    { title: "Amazon Web Services (AWS)", image: "/images/amazon.png" },
+    { title: "MERN Stack Development", image: "/images/mern.png" },
+    { title: "Digital Marketing", image: "/images/digital.png" },
+  ];
 
-const courses = [
-  {
-    title: "UI/UX Design",
-    image: "/images/course1.avif",
-  },
-  {
-    title: "Front-end Development",
-    image: "/images/frontend.png",
-  },
-  {
-    title: "Amazon Web Services (AWS)",
-    image: "../../assets/amazon.png",
-  },
-  {
-    title: "MERN Stack Development",
-    image: "/images/mern.png",
-  },
-  {
-    title: "Digital Marketing",
-    image: "/images/digital.png",
-  },
-];
+  const positions = [
+    { top: "90px", left: "10%" },
+    { top: "40px", left: "35%" },
+    { top: "10px", left: "50%" },
+    { top: "40px", left: "65%" },
+    { top: "90px", left: "90%" },
+  ];
 
-const Courses = () => {
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-center text-orange-500 mb-10">
+    <section className="py-24 bg-white">
+      <h2 className="text-4xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600">
         Our Courses
       </h2>
-      <div className="flex flex-wrap justify-center gap-10">
+
+      <div className="relative w-full max-w-6xl mx-auto h-[280px]">
         {courses.map((course, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-40 text-center"
+            className="absolute transform -translate-x-1/2"
+            style={{
+              top: positions[index].top,
+              left: positions[index].left,
+            }}
           >
-            <img
-              src={course.image}
-              alt={course.title}
-              className="w-40 h-40 object-cover rounded-xl shadow-md"
-            />
-            <h3 className="mt-4 text-md font-medium text-gray-700">
-              {course.title}
-            </h3>
+            <CourseCard course={course} />
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Courses;
+const CourseCard = ({ course }) => (
+  <div className="bg-white shadow-md rounded-xl p-4 w-48 h-64 text-center border border-orange-200 flex flex-col items-center justify-between">
+    <div className="h-40 flex items-center justify-center mb-3">
+      <img
+        src={course.image}
+        alt={course.title}
+        className="max-h-full max-w-full object-contain"
+      />
+    </div>
+    <h3 className="text-base font-semibold text-gray-700">{course.title}</h3>
+  </div>
+);
+
+export default CoursesSection;
