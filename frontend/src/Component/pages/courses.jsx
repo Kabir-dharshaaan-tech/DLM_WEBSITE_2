@@ -57,3 +57,11 @@ const CourseCard = ({ course }) => (
 );
 
 export default CoursesSection;
+
+
+
+
+
+
+
+
