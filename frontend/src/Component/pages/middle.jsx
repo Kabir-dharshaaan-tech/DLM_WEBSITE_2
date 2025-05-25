@@ -29,7 +29,10 @@ const Middle = () => {
           custom={0}
           variants={fadeInUp}
         >
-          <h3 className="text-3xl font-bold text-orange-500 mb-4">Our Mission</h3>
+          <h3 className="text-3xl font-bold text-white mb-4 transition-all duration-300 hover:text-orange-500 [text-shadow:_0_0_2px_orange,_1px_1px_0_orange,_-1px_-1px_0_orange,_1px_-1px_0_orange,_-1px_1px_0_orange]">
+  Our Mission
+</h3>
+
           <p className="text-gray-700 text-base leading-relaxed">
             Our mission is to bridge the gap between academic learning and real-world applications.
             We equip students with practical skills in the latest technologies, ensuring they are
@@ -63,7 +66,10 @@ const Middle = () => {
           custom={0}
           variants={fadeInUp}
         >
-          <h3 className="text-3xl font-bold text-orange-500 mb-4">Our Vision</h3>
+          <h3 className="text-3xl font-bold text-white mb-4 transition-all duration-300 hover:text-orange-500 [text-shadow:_0_0_2px_orange,_1px_1px_0_orange,_-1px_-1px_0_orange,_1px_-1px_0_orange,_-1px_1px_0_orange]">
+  Our Vision
+</h3>
+
           <p className="text-gray-700 text-base leading-relaxed">
             We envision a future where every student can reach their full potential in the tech industry.
             Through exceptional training and steadfast support, we aim to cultivate a community of

@@ -28,7 +28,10 @@ const AboutSection = () => {
 
     
       <div className="relative max-w-4xl mx-auto text-center z-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Us!</h2>
+   <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 transition-all duration-300 hover:text-orange-500 [text-shadow:_0_0_2px_orange,_1px_1px_0_orange,_-1px_-1px_0_orange,_1px_-1px_0_orange,_-1px_1px_0_orange]">
+  About Us!
+</h2>
+
         <p className="text-gray-700 text-base sm:text-lg md:text-xl mb-4">
           DL Masters Academy is an IT training institute committed to delivering top-notch education for both students and professionals. Emphasizing hands-on learning and industry alignment, we provide well-rounded training programs tailored to the demands of today’s technology-focused world.
         </p>
@@ -41,3 +44,21 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
