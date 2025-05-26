@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from '../../assets/DLM Logo.png';
 
-const Menubar = ({ scrollToSection, bannerRef, aboutRef, coursesRef }) => {
+const Menubar = ({ scrollToSection, bannerRef, aboutRef, coursesRef , contactRef}) => {
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
@@ -31,7 +31,11 @@ const Menubar = ({ scrollToSection, bannerRef, aboutRef, coursesRef }) => {
             Courses
           </li>
           <li className="hover:text-orange-500 cursor-pointer">Blog</li>
-          <li className="hover:text-orange-500 cursor-pointer">Contact</li>
+          <li className="hover:text-orange-500 cursor-pointer"
+              onClick={()=>scrollToSection(contactRef)}
+              >
+                Contact
+          </li>
         </ul>
       </div>
     </nav>

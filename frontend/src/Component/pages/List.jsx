@@ -36,11 +36,10 @@ const learningOptions = [
 const List = () => {
   return (
     <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold text-center mb-16">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 drop-shadow-md">
-          Learning Options
-        </span>
-      </h2>
+     <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-16 text-center transition-all duration-300 hover:text-orange-500 animate-pulse [text-shadow:_0_0_2px_orange,_1px_1px_0_orange,_-1px_-1px_0_orange,_1px_-1px_0_orange,_-1px_1px_0_orange]">
+  Learning Options
+</h2>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {learningOptions.map((option, index) => (

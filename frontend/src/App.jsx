@@ -15,7 +15,7 @@ function App() {
   const bannerRef = useRef(null);
   const aboutRef = useRef(null);
   const coursesRef = useRef(null);
-
+  const contactRef=useRef(null);
   const scrollToSection = (ref) => {
     if (ref.current) {
       window.scrollTo({
@@ -37,6 +37,7 @@ function App() {
                 bannerRef={bannerRef}
                 aboutRef={aboutRef}
                 coursesRef={coursesRef}
+                contactRef={contactRef}
               />
 
               <div ref={bannerRef}>
@@ -55,7 +56,9 @@ function App() {
 
               <Slide />
               <List />
+              <div ref={contactRef}>
               <Details />
+              </div>
             </>
           }
         />
