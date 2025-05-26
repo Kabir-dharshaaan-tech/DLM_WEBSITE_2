@@ -93,7 +93,7 @@ const Middle = () => {
         </motion.div>
       </div>
 
-      {/* Decorative SVG Line */}
+ 
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <svg
           width="100%"
@@ -123,3 +123,33 @@ const Middle = () => {
 };
 
 export default Middle;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
